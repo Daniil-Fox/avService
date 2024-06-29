@@ -314,6 +314,8 @@ a {
 .header__bottom {
   padding: 2.5rem 0;
   background-color: #dc7d43;
+  position: relative;
+  z-index: 91;
 }
 @media (max-width: 768px) {
   .header__bottom {

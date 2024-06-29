@@ -16122,8 +16122,14 @@ window.addEventListener("scroll", e => {
 });
 const menuBtn = document.querySelector(".header__burger");
 const menu = document.querySelector(".menu");
+const menuItes = menu.querySelectorAll(".nav__link");
 menuBtn.addEventListener("click", e => {
   menu.classList.toggle("active");
+});
+menuItes.forEach(link => {
+  link.addEventListener("click", e => {
+    menu.classList.remove("active");
+  });
 });
 })();
 

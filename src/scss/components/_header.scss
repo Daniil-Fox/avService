@@ -27,6 +27,8 @@
   &__bottom {
     padding: 2.5rem 0;
     background-color: #dc7d43;
+    position: relative;
+    z-index: 91;
 
     @include small-tablet {
       display: none;
